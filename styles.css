@@ -108,3 +108,48 @@ body {
     background: none;
     border: none;
 }
+
+
+/* Add/update these parts in your styles.css */
+
+#nft-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* Add these media queries at the bottom of your CSS file */
+@media screen and (max-width: 1024px) {
+    #nft-container {
+        grid-template-columns: repeat(3, 33.333%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nft-container {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nft-container {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .controls {
+        padding: 5px;
+    }
+
+    #toggle-button {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .modal img,
+    .modal video {
+        max-width: 95vw;
+        max-height: 95vh;
+    }
+}
