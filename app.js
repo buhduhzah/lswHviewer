@@ -2,7 +2,9 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const nftContainer = document.getElementById('nft-container');
     const toggleButton = document.getElementById('toggle-button');
-    const LOCAL_API_URL = '/api/nft-data';
+    const LOCAL_API_URL = 'http://localhost:3000/nft-data';
+   
+
     let showingImages = true;
     let allNFTs = [];
     let currentIndex = 0;
