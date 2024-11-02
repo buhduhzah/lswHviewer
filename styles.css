@@ -147,3 +147,9 @@ body {
         max-height: 95vh;
     }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #f00; /* Red background for testing */
+    }
+}
